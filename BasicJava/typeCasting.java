@@ -23,6 +23,7 @@ public class typeCasting {
     // int i = (int) f;
     // System.out.println(i);
 
+    //Boolean Conversions are not possible.
     }
     
 }
