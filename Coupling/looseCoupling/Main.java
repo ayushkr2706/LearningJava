@@ -1,5 +1,6 @@
 package Coupling.looseCoupling;
 
+
 public class Main {
     public static void main(String[] args) {
         

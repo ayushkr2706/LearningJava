@@ -12,7 +12,7 @@ public class recursion01 {
     }
 
     static void print(int num){
-        if(num > 10){
+        if(num > 10){   // Base Case
             return;
         }
         System.out.println(num);
@@ -21,7 +21,7 @@ public class recursion01 {
     }
 
     static void print2(int num) {
-        if(num == 0){
+        if(num == 0){     // Base Case
             return;
         }
         print2(num - 1);    // Non-tail Recursion

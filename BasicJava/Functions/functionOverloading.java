@@ -28,7 +28,7 @@ public class functionOverloading {
         System.out.println("Hi " + name + " " + "Your age is " + age);
     }
 
-    static void greet(int age, String name){
+    static void greet(int age, String name){ // different ordering of parameters
         System.out.println("Hi " + name + " " + "Your age is " + age);
     }
     

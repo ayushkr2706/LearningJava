@@ -14,7 +14,7 @@ public class numberStoring {
 
         byte b = (byte) 0b11010110;
         System.out.println(b);
-
+        
 
     }
     
