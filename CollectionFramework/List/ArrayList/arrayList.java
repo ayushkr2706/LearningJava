@@ -1,4 +1,5 @@
-package CollectionFramework.ArrayList;
+package CollectionFramework.List.ArrayList;
+
 import java.util.*;
 
 public class arrayList{
