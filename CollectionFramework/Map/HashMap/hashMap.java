@@ -46,5 +46,10 @@ public class hashMap {
 
         System.out.println("Keyset : " + mpp2.keySet() );
         System.out.println("Values : " + mpp2.values());
+        System.out.println("Entry Set : " + mpp2.entrySet());
+
+        for(Map.Entry<String, String> entry : mpp2.entrySet()){
+            System.out.println("Key : " + entry.getKey() + " , Value : " + entry.getValue());
+        }
     }
 }
