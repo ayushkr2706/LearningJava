@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class comparator {
+public class comparable {
     
     public static void main(String[] args) {
 
         List<Student> students = new ArrayList<>();
 
         students.add(new Student(21, "Ayush" , 72));
+        students.add(new Student(57, "Uday", 70));
         students.add(new Student(26, "Piyush", 70));
         students.add(new Student(52, "Navneet", 69));
 
@@ -66,7 +67,9 @@ class Student implements Comparable<Student>{
     public int compareTo(Student that) {
       
         //Define the sorting logic
-
+        if(this.weight == that.weight){
+            return this.name.compareTo(that.name);
+        }
         return this.weight - that.weight;
 
     }
