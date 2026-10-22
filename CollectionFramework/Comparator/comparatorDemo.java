@@ -19,13 +19,15 @@ public class comparatorDemo {
         System.out.println("Before sorting on the basis of age : ");
         System.out.println(students);
 
-        Collections.sort(students, new Comparator<Student>() {
+        // Collections.sort(students, new Comparator<Student>() {
 
-            @Override
-            public int compare(Student o1, Student o2){
-                return o1.age - o2.age;
-            }
-        });
+        //     @Override
+        //     public int compare(Student o1, Student o2){
+        //         return o1.age - o2.age;
+        //     }
+        // });
+
+        Collections.sort(students, new AgeComparator());
 
         System.out.println("After Sorting on the sis of age : ");
         System.out.println(students);
@@ -73,4 +75,13 @@ class Student{
     public String toString() {
         return "Student [age=" + age + ", name=" + name + ", weight=" + weight + "]";
     }
+}
+
+class AgeComparator implements Comparator<Student>{
+
+    @Override
+    public int compare(Student arg0, Student arg1) {
+        return arg0.age - arg1.age;
+    }
+
 }
