@@ -12,10 +12,10 @@ public class Demo01 {
         Integer a = 10;   //Autoboxing
         int b = a;  //Unboxing
         //behind the scenes it does 
-        //int a = Integer.intValue();
+        //int b = a.intValue();
 
         /**The Integer class would look like :
-        class Integer {
+       public final class Integer {
         
         int value;
 
@@ -31,6 +31,10 @@ public class Demo01 {
 
             public static int intValue(){
                 return this.value;
+            }
+
+            public boolean equals(Integer value){
+                return value.intValue() == this.value.intValue();
             }
     
     } **/

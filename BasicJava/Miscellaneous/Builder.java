@@ -1,4 +1,4 @@
-package BasicJava;
+package BasicJava.Miscellaneous;
 
 //A builder object is an object whose job is to help create & configure another object.
 public class Builder {

@@ -1,4 +1,4 @@
-package BasicJava;
+package BasicJava.Miscellaneous;
 
 public class typeCasting {
 
