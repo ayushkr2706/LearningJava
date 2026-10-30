@@ -29,7 +29,7 @@ public class comparatorDemo {
 
        // Collections.sort(students, new AgeComparator());      //using separate Comparator class
 
-       Collections.sort(students, (o1, o2) -> o1.age - o2.age);     //using Lambda Expression
+       students.sort((o1, o2) -> o2.age - o1.age);     //using Lambda Expression
 
         System.out.println("After Sorting on the sis of age : ");
         System.out.println(students);
